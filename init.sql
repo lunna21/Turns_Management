@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `schedule` (
   `date_schedule` DATETIME,
   `id_student` VARCHAR(36),
   `id_turn` INT,
-  -- UPDATED ENUM VALUES HERE:
+  `official_id` INT, 
   `state_schedule` ENUM('scheduled', 'attended', 'cancelled'),
   `created_schedule_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   `updated_schedule_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
